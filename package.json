@@ -1,0 +1,35 @@
+{
+  "name": "Rest-Countries-API",
+  "version": "1.0.0",
+  "description": "This is a solution to the [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MonaElshikh/REST-Countries-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MonaElshikh/REST-Countries-API/issues"
+  },
+  "homepage": "https://github.com/MonaElshikh/REST-Countries-API#readme",
+  "devDependencies": {
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.55.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "type": "module"
+}

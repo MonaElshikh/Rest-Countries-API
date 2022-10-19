@@ -8,5 +8,60 @@ html(lang="en")
           include includes/_styles
           title Rest Countries API App | Mona Elshikh 
     body
+      header
+            h1 Where in the world?
+            .theme 
+                  img(src="../dist/images/moon-icon.svg" )
+                  span Dark Mode
+      div(class="container" role="main")
+            .list 
+                  .search
+                        .by-country
+                              img(src="../dist/images/search_icon.svg" width="20px" height="20px")
+                              input(type="txt" placeholder="Search for a country")
+                        .by-region
+                              img(src="../dist/images/down-arrow.svg")
+                              input(list="" type="txt" placeholder="Filter by region")
+                              datalist(id="regions-list" )
+                  .countries  
+            .details
+                  .back-btn #[button Back] #[img(src="../dist/images/back-arrow.svg")]
+                  .content
+                        .flag #[img(src="https://flagcdn.com/w320/es.png")]
+                        .data
+                              .main-data
+                                    h3 name
+                                    .native-name
+                                          label Native Name:  
+                                          span jdjdj
+                                    .population
+                                          label Population:  
+                                          span jdjdj
+                                    .region
+                                          label Region:  
+                                          span jdjdj
+                                    .sub-region
+                                          label Sub Region: 
+                                          span jdjdj
+                                    .capital
+                                          label Capital:  
+                                          span jdjdj
+                              .more-data
+                                    .tld
+                                        label Top Level Domain:   
+                                        span jdjdj
+                                    .currencies
+                                          label Currencies: 
+                                          span slkdls
+                                    .languages
+                                          label Languages: 
+                                          span djkfjdkfkd
+                              .border-country
+                                    label Border Countries: 
+                                    .values
+                                          span france
+                                          span ssdds
+                                          span ereer
+
       script(src="dist/js/main.js" ) 
         

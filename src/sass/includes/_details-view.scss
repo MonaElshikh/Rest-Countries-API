@@ -1,0 +1,117 @@
+@use "../helpers/mixins";
+.details {
+  @include mixins.display($display: none);
+  .back-btn {
+    margin-top: 20px;
+    @include mixins.position($position: relative);
+    button {
+      background-color: var(--white);
+      border: none;
+      border-radius: 5px;
+      padding: 5px 30px;
+      box-shadow: 0 0 15px -5px var(--light-mode-input);
+      color: var(--light-mode-input);
+      font-size: 12px;
+    }
+    img {
+      width: 10px;
+      @include mixins.position($position: absolute, $top: 8px, $left: 10px);
+    }
+  }
+  .content {
+    margin-block: 50px;
+    margin-inline: auto;
+    width: fit-content;
+    .flag > img {
+      max-width: 100%;
+    }
+    .data {
+      color: var(--light-mode-txt);
+      h3 {
+        font-size: 22px;
+      }
+      > div > label {
+        font-size: 16px;
+      }
+      > div > div > label,
+      > div > label {
+        display: inline-block;
+        font-weight: bold;
+        margin-block: 5px;
+        padding-right: 5px;
+        color: var(--light-mode-txt);
+      }
+      > div > div > span {
+        color: var(--light-mode-input);
+      }
+      .more-data {
+        margin-top: 15px;
+      }
+      .border-country {
+        margin-top: 15px;
+        .values {
+          @include mixins.display(flex, $align: center);
+          span {
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 10px;
+            background-color: var(--white);
+            border: none;
+            border-radius: 5px;
+            padding: 5px 30px;
+            box-shadow: 0 0 15px -5px var(--light-mode-input);
+            color: var(--light-mode-input);
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+@include mixins.mediaBreakpoints($min-width: "min-width:992px") {
+  .details {
+    .content {
+      width: 100%;
+      @include mixins.display($display: flex, $justify: space-between);
+      .flag {
+        width: 690px;
+        text-align: center;
+        img {
+          width: 80%;
+        }
+      }
+      .data {
+        @include mixins.display(
+          $display: flex,
+          $justify: space-between,
+          $wrap: wrap
+        );
+        width: 620px;
+        > div > div > label,
+        .details .content .data > div > label {
+          margin-block: 10px;
+        }
+        .main-data {
+          width: 21vw;
+          h3 {
+            font-size: 26px;
+          }
+        }
+        .more-data {
+          width: 21vw;
+          margin-top: 90px;
+        }
+        .border-country {
+          @include mixins.display(
+            $display: flex,
+            $align: center,
+            $justify: space-between,
+            $wrap: wrap
+          );
+          width: 450px;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

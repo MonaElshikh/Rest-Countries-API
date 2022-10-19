@@ -7,6 +7,7 @@
 - White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%)
 
   */
+@use "../helpers/mixins";
 * {
   box-sizing: border-box;
 }
@@ -15,7 +16,7 @@
   --dark-mode-bg: hsl(207, 26%, 17%);
   --light-mode-txt: hsl(200, 15%, 8%);
   --light-mode-input: hsl(0, 0%, 52%);
-  --light-mode-bg: hsl(0, 0%, 98%);
+  --bgColor: hsl(0, 0%, 98%);
   --white: hsl(0, 0%, 100%);
 }
 html {
@@ -27,6 +28,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 14px;
+  background-color: var(--bgColor);
 }
 ul {
   list-style: none;
@@ -40,4 +42,12 @@ a {
   color: var(--light-mode-input);
   font-size: 14px;
   letter-spacing: 1.5px;
+}
+.container {
+  padding: 20px;
+}
+@include mixins.mediaBreakpoints($min-width: "min-width:1440px") {
+  .container {
+    padding: 40px 60px;
+  }
 }

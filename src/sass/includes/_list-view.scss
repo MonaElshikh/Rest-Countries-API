@@ -1,0 +1,138 @@
+@use "../helpers/mixins";
+.list {
+  @include mixins.position($position: relative);
+  .search {
+    @include mixins.position($position: absolute, $top: -25px, $z-index: 2);
+    .by-country {
+      @include mixins.position($position: relative);
+      input {
+        padding-block: 18px;
+        padding-left: 40px;
+        padding-right: 15px;
+        width: 80vw;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: var(--white);
+        box-shadow: 0 0 15px -5px var(--light-mode-input);
+      }
+      img {
+        @include mixins.position(
+          $position: absolute,
+          $top: 15px,
+          $left: 10px,
+          $z-index: 2
+        );
+      }
+    }
+    .by-region {
+      @include mixins.position($position: relative);
+      margin-top: 20px;
+      input {
+        padding: 15px;
+        width: 60vw;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: var(--white);
+        box-shadow: 0 0 15px -5px var(--light-mode-input);
+        &::placeholder {
+          color: var(--light-mode-txt);
+        }
+        &:focus + datalist {
+          @include mixins.display($display: block);
+          background-color: var(--white);
+          margin-top: 5px;
+          padding: 15px;
+          border: none;
+          border-radius: 5px;
+          width: 55vw;
+          box-shadow: 0 0 5px 0px var(--light-mode-input);
+          option {
+            color: var(--light-mode-txt);
+            margin-block: 10px;
+          }
+        }
+      }
+      img {
+        width: 10px;
+        @include mixins.position($position: absolute, $top: 17px, $right: 90px);
+      }
+    }
+  }
+  .countries {
+    @include mixins.display(
+      $display: grid,
+      $gap: 35px,
+      $columns: repeat(auto-fit, minmax(290px, 1fr))
+    );
+    @include mixins.position($position: relative, $z-index: 1);
+    margin-block: 30px;
+    padding-top: 150px;
+    padding-inline: 20px;
+    .country {
+      border-radius: 6px;
+      background-color: var(--white);
+      box-shadow: 0 0 15px -5px var(--light-mode-input);
+      padding-bottom: 25px;
+      cursor: pointer;
+      .flag {
+        @include mixins.position($position: relative);
+        max-height: 250px;
+        overflow: hidden;
+        img {
+          max-width: 100%;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+      }
+      .data {
+        padding-inline: 15px;
+        label {
+          font-weight: bold;
+        }
+        span {
+          color: var(--light-mode-txt);
+          @include mixins.display($display: inline-block);
+          padding-block: 5px;
+        }
+      }
+    }
+  }
+}
+@include mixins.mediaBreakpoints($min-width: "min-width:992px") {
+  .list {
+    .search {
+      width: 100%;
+      @include mixins.display($display: flex, $justify: space-between);
+      .by-country {
+        input {
+          width: 40vw;
+          padding-block: 25px;
+        }
+        img {
+          top: 20px;
+        }
+      }
+      .by-region {
+        margin-top: 0;
+        input {
+          width: 16vw;
+          padding-block: 25px;
+          &:focus + datalist {
+            width: 15vw;
+          }
+        }
+        img {
+          right: 10px;
+          top: 25px;
+        }
+      }
+    }
+    .countries {
+      padding-top: 100px;
+      gap: 52px;
+      padding-inline: 0;
+    }
+  }
+}

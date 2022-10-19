@@ -1,0 +1,43 @@
+@use "../helpers/mixins";
+header {
+  padding: 20px;
+  @include mixins.display(
+    $display: flex,
+    $justify: space-between,
+    $align: center
+  );
+  background-color: var(--white);
+  box-shadow: 0 0 5px 0px var(--light-mode-input);
+  h1 {
+    font-size: 16px;
+  }
+  .theme {
+    @include mixins.display($display: flex);
+    cursor: pointer;
+    img {
+      width: 15px;
+      display: block;
+      margin-right: 5px;
+    }
+    span {
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
+}
+@include mixins.mediaBreakpoints($min-width: "min-width:992px") {
+  header {
+    padding-inline: 60px;
+    h1 {
+      font-size: 24px;
+    }
+    .theme {
+      img {
+        width: 25px;
+      }
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+}

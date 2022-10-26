@@ -40,15 +40,13 @@ Users should be able to:
 
 ![](./screenshots/deskTop.png)
 ![](./screenshots/deskTop-light.png)
-![](./screenshots/mobile.png)
-![](./screenshots/mobile-light.png)
 ![](./screenshots/details.png)
 ![](./screenshots/details-light.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/MonaElshikh/Rest-Countries-API]
+- Live Site URL: [https://monaelshikh.github.io/Rest-Countries-API/]
 
 ## My process
 
@@ -65,7 +63,7 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@MonaElshikh](https://www.frontendmentor.io/profile/MonaElshikh)
 
 ## Acknowledgments
 

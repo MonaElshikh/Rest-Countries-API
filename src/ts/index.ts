@@ -260,7 +260,7 @@ function loadCountryDetails(country: Countries) {
       borderCountryValuesDiv.appendChild(borderCountrySpan);
     });
   } else {
-    borderCountryDiv.innerHTML = "---";
+    borderCountryDiv.style.display = "none";
   }
 }
 function searchByCountry() {

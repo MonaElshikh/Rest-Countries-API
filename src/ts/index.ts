@@ -172,6 +172,7 @@ function loadCountries() {
     flagDiv.className = "flag";
     let flagImg = document.createElement("img");
     flagImg.src = country.flags.svg;
+    flagImg.alt = "flag";
     flagDiv.appendChild(flagImg);
     countryDiv.appendChild(flagDiv);
 

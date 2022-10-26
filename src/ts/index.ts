@@ -269,7 +269,10 @@ function searchByCountry() {
       countriesList = getFromLocalStorage("countries-list");
     }
     countriesList = countriesList.filter((country) =>
-      country.name.common.includes(searchInput.value.trim())
+      country.name.common
+        .toLocaleLowerCase()
+        .trim()
+        .includes(searchInput.value.toLocaleLowerCase().trim())
     );
     loadCountries();
   });

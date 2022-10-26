@@ -38,7 +38,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshots/deskTop.png)
+![](./screenshots/deskTop-light.png)
+![](./screenshots/mobile.png)
+![](./screenshots/mobile-light.png)
+![](./screenshots/details.png)
+![](./screenshots/details-light.png)
 
 ### Links
 
@@ -50,9 +55,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - Sass
 - Pug js

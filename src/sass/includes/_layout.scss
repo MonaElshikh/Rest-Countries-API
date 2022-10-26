@@ -14,10 +14,11 @@
 :root {
   --dark-mode-elemnts: hsl(209, 23%, 22%);
   --dark-mode-bg: hsl(207, 26%, 17%);
-  --light-mode-txt: hsl(200, 15%, 8%);
-  --light-mode-input: hsl(0, 0%, 52%);
-  --bgColor: hsl(0, 0%, 98%);
-  --white: hsl(0, 0%, 100%);
+  --txt-color: hsl(200, 15%, 8%);
+  --elements-color: hsl(0, 0%, 52%);
+  --elements-bgcolor: hsl(0, 0%, 100%);
+  --bg-color: hsl(0, 0%, 98%);
+  --filter: none;
 }
 html {
   scroll-behavior: smooth;
@@ -28,7 +29,8 @@ body {
   padding: 0;
   margin: 0;
   font-size: 14px;
-  background-color: var(--bgColor);
+  background-color: var(--bg-color);
+  color: var(--txt-color);
 }
 ul {
   list-style: none;
@@ -39,7 +41,7 @@ a {
   text-decoration: none;
 }
 ::placeholder {
-  color: var(--light-mode-input);
+  color: var(--txt-color);
   font-size: 14px;
   letter-spacing: 1.5px;
 }

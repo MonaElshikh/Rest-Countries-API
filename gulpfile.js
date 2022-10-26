@@ -43,7 +43,7 @@ task("js", () => {
         .pipe(ts({
             target: "es2016",
             strict: true,
-            noImplicitAny: true,
+            noImplicitAny: false,
             removeComments: true,
             outFile: 'main.js',
         }))

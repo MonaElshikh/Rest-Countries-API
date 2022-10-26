@@ -225,7 +225,6 @@ function loadCountryDetails(country: Countries) {
   listDiv.style.display = "none";
   detailesDiv.style.display = "block";
   borderCountryValuesDiv.innerHTML = "";
-  console.log(country);
   detailesFlag.src = country.flags.svg;
   detailsCountryName.innerText = country.name.common;
   nativeName.innerText = country.name.official;

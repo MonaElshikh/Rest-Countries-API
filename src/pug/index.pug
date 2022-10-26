@@ -11,23 +11,23 @@ html(lang="en")
       header
             h1 Where in the world?
             .theme(data-theme="light") 
-                  img(src="dist/images/moon-icon.svg" )
+                  img(src="dist/images/moon-icon.svg" alt="moon" )
                   span Dark Mode
       div(class="container" role="main")
             .list 
                   .search
                         .by-country
-                              img(src="dist/images/search_icon.svg" width="20px" height="20px")
-                              input(type="txt" placeholder="Search for a country")
+                              img(src="dist/images/search_icon.svg" alt="search")
+                              input(type="text" placeholder="Search for a country")
                         .by-region
-                              img(src="dist/images/down-arrow.svg")
-                              input(list="" type="txt" placeholder="Filter by region")
+                              img(src="dist/images/down-arrow.svg" alt="down-arrow")
+                              input(list="" type="text" value="Filter by region")
                               datalist(id="regions-list" )
                   .countries  
             .details
-                  .back-btn #[button Back] #[img(src="dist/images/back-arrow.svg")]
+                  .back-btn #[button Back] #[img(src="dist/images/back-arrow.svg" alt="back-arrow")]
                   .content
-                        .flag #[img]
+                        .flag #[img(alt="flag")]
                         .data
                               .main-data
                                     h3 name

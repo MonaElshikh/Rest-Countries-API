@@ -21,6 +21,7 @@
       }
       img {
         filter: var(--filter);
+        width: 20px;
         @include mixins.position(
           $position: absolute,
           $top: 15px,

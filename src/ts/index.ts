@@ -280,10 +280,10 @@ function openRegionList() {
   regionInput.addEventListener("click", () => {
     if (regionDdl.style.display === "block") {
       regionDdl.style.display = "none";
-      arrowImg.src = "../dist/images/down-arrow.svg";
+      arrowImg.src = "dist/images/down-arrow.svg";
     } else {
       regionDdl.style.display = "block";
-      arrowImg.src = "../dist/images/up-arrow.svg";
+      arrowImg.src = "dist/images/up-arrow.svg";
     }
     countriesList = getFromLocalStorage("countries-list");
   });

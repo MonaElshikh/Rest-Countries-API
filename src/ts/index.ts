@@ -311,6 +311,7 @@ function filterByRegion(regionName: string) {
       (country) => country.region === regionName
     );
     regionInput.value = regionName;
+    arrowImg.src = "dist/images/down-arrow.svg";
   }
   loadCountries();
   regionDdl.style.display = "none";
